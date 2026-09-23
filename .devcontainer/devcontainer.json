@@ -1,0 +1,6 @@
+{
+    "name": "CIS 531/731",
+    "build": {
+        "dockerfile": "../docker/Dockerfile"
+    }
+}

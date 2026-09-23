@@ -2,25 +2,25 @@
 # CIS 531/731: Minimal DevContainer Dockerfile (MP2)
 # ==============================================================================
 # Base image pinned for stability
-FROM python:3.10-slim-bullseye
+FROM python:3.10-slim-bookworm
 
 # 1. Install System Dependencies (Java for PySpark, FFmpeg for Whisper)
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
-    openjdk-11-jre-headless \
+    openjdk-17-jre-headless \
     ffmpeg \
     git \
     sudo \
     && rm -rf /var/lib/apt/lists/*
 
 # 2. Configure Environment Variables
-ENV JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 ENV PYSPARK_PYTHON=python3
 ENV PIP_NO_CACHE_DIR=1
 
 # 3. Install Python Dependencies (Strict Pinned Versions per MP2 Manifest)
-RUN pip install --upgrade pip && \
-    pip install \
+RUN pip install --upgrade pip wheel "setuptools<70.0.0" && \
+    pip install --no-build-isolation\
     pyspark==3.5.1 \
     torch==2.2.1 \
     transformers==4.38.2 \
