@@ -2,5 +2,17 @@
     "name": "CIS 531/731",
     "build": {
         "dockerfile": "../docker/Dockerfile"
+    },
+    "customizations": {
+    "vscode": {
+      "settings": {
+        "python.defaultInterpreterPath": "/usr/local/bin/python"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-azuretools.vscode-container"
+      ]
     }
+  }
 }
