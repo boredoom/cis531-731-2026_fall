@@ -24,9 +24,11 @@ RUN pip install --upgrade pip wheel "setuptools<70.0.0" && \
     pyspark==3.5.1 \
     torch==2.2.1 \
     transformers==4.38.2 \
+    sentence-transformers \
     openai-whisper==20231117 \
     mlflow==2.11.1 \
-    faiss-cpu==1.8.0
+    faiss-cpu==1.8.0 \
+    ipykernel
 
 # 4. Create Non-Root User (Required for standard DevContainer permissions)
 ARG USERNAME=vscode
