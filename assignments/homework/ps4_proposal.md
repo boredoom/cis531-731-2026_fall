@@ -34,6 +34,6 @@ Your proposal must be a **1 to 2-page PDF** containing the following sections ex
 *   **Clarity & Format (5 pts):** Follows exact section structure. Submitted as a clean PDF.
 *   **GenAI Verification (5 pts):** Includes the required GenAI log or states AI was not used.
 
-| MP 3 | [[All Assignments]](README.md#schedule) | [MP 5: Structured Streaming](../machine_problems/mp5_structured_streaming.md) |
+| MP 3 | [[All Assignments]](../README.md#schedule) | [MP 5: Structured Streaming](../machine_problems/mp5_structured_streaming.md) |
 
 [🏠 Course Home](../../README.md) · [⬆️ Module](../../modules/module_04/README.md) · [⏫ Phase](../../phases/phase_02/README.md)
