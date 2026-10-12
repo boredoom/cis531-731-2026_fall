@@ -68,6 +68,6 @@ This assignment is worth 100 points total.
 
 | ⬅️ Previous | 📝 Index | Next ➡️ |
 |:---|:---:|---:|
-| [MP 7: Few-Shot Trope/Genre Classification (GenAI)](../machine_problems/mp7_genre_classification.md) | [[All Assignments]](../README.md#schedule) | [MP 9: Retrieval-Augmented Classification & Convolutions)](../machine_problems/mp9_rag_classification_gold_standard.md) |
+| [MP 7: Few-Shot Trope/Genre Classification (GenAI)](../machine_problems/mp7_genre_classification.md) | [[All Assignments]](../README.md#schedule) | [MP 9: Retrieval-Augmented Classification & Convolutions](../machine_problems/mp9_rag_classification_gold_standard.md) |
 
 [🏠 Course Home](../../README.md) · [⬆️ Module](../../modules/module_07/README.md) · [⏫ Phase](../../phases/phase_04/README.md)
