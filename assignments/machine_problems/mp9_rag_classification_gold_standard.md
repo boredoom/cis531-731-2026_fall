@@ -9,20 +9,20 @@ next: assignments/machine_problems/mp10_interpretability_metrics.md
 REVIEW R-4: ASR-track details are drafted assumptions: each gold object is an audio segment of at most 15 seconds with a reference transcript and a segment label; the ordered cohort axis is the event-time window index.
 REVIEW R-5: Annotation-partner assignment and `overlap_ids.txt` (20 shared objects) are drafted mechanisms. Pooling team members' adjudicated files toward the 50–200 HW 12 range is intended continuity.
 -->
-# MP 9: Retrieval-Augmented Classification & Convolutions (INV-17/21)
+# MP 9: Retrieval-Augmented Classification & Convolutions
 **Human-in-the-loop gold-standard construction, weak-supervision expansion, retrieval-augmented classification, and cohort convolution analysis**
 
 **🗓️ Released:** Sat 07 Nov 2026 | **📅 Due:** Mon 16 Nov 2026 | **💯 Points:** 100 | **👥 Team:** Individual (annotation overlap with an assigned partner)
 
 > **🚨 CRITICAL SUBMISSION POLICY**
-> **Annotation Ceiling and CI/CD Gate (INV-17/INV-21):** Annotate at most 50 data objects or 2 hours, whichever is lower. Your raw labeled file (`gold_raw.csv` or `gold_raw.jsonl`) is validated by a deterministic row-count check; more than 50 rows fails the pipeline and returns a zero for this assignment. The 2-hour limit is self-attested in `attestation.md` and bounded structurally by the row cap. A CI row-count zero is recorded separately from a quota-exhaustion zero (INV-18).
+> **Annotation Ceiling and CI/CD Gate:** Annotate at most 50 data objects or 2 hours, whichever is lower. Your raw labeled file (`gold_raw.csv` or `gold_raw.jsonl`) is validated by a deterministic row-count check; more than 50 rows fails the pipeline and returns a zero for this assignment. The 2-hour limit is self-attested in `attestation.md` and bounded structurally by the row cap. A CI row-count zero is recorded separately from a quota-exhaustion zero.
 
 ## 1. Overview
 Construct a gold-standard set, expand it by weak supervision, and evaluate a retrieval-augmented classifier plus a convolution analysis along an ordered cohort axis. Gold labels must be assigned by you; AI-generated labels are permitted only in the weak-supervision pool and must carry `source=silver`. ASR track: each gold object is an audio segment of at most 15 seconds with a reference transcript and a segment label.
 
 Weak supervision: use your MP 7 classifier and simple labeling functions to produce silver labels for an unlabeled pool of at least 1,000 chunks, aggregate by weighted vote, and measure silver-vs-gold agreement on your gold objects. Retrieval-augmented classification: retrieve top-k exemplars (k ∈ {3, 5, 10}) from the MP 7 FAISS index to condition classification and compare against the MP 7 fixed-demonstration baseline. Convolution: bin chunks along the ordered cohort axis (VDB track: release decade, `generation_cohort := f(release_decade)`; ASR track: event-time window index), form per-cohort trope-frequency vectors, and convolve with a smoothing kernel [0.25, 0.5, 0.25] and a first-difference kernel [-1, 1] to estimate cohort-to-cohort drift with bootstrap CIs. CIS 731 additionally fits a learned 1-D convolutional kernel (PyTorch 2.x, CPU) and compares held-out forecast error against the fixed kernels.
 
-All work must be solvable on the pinned CPU DevContainer (INV-14/INV-15); GPU access is optional and never required.
+All work must be solvable on the pinned CPU DevContainer; GPU access is optional and never required.
 
 **Required Readings:**
 * [“Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks” (Lewis et al.), Sections 2–3](https://arxiv.org/abs/2005.11401): retriever–generator composition, marginalization over retrieved documents, and joint evaluation.
