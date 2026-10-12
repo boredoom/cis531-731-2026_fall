@@ -72,6 +72,5 @@ This assignment is worth 100 points total.
 | ⬅️ Previous | 📝 Index | Next ➡️ |
 |:---|:---:|---:|
 | [PS 6: Semantic Search, Chunking, & VDB Schema](../homework/ps6_semantic_search_vdb_schema.md) | [[All Assignments]](../README.md#schedule) | [PS 8: Interim Report (Mandatory Milestone)](../homework/ps8_interim_report.md) |
-earch_vdb_schema.md) |
 
 [🏠 Course Home](../../README.md) · [⬆️ Module](../../modules/module_06/README.md) · [⏫ Phase](../../phases/phase_03/README.md)
