@@ -73,4 +73,4 @@ This assignment is worth 100 points total.
 |:---|:---:|---:|
 | [PS 4: Term Project Proposal](../homework/ps4_proposal.md) | [[All Assignments]](../README.md#schedule)  | [PS 6: Semantic Search, Chunking, & VDB Schema](../homework/ps6_semantic_search_vdb_schema.md) |
 
-[🏠 Course Home](../../README.md) · [⬆️ Module](../../modules/module_05/README.md) · [⏫ Phase](../../phases/phase_03/README.md)
+[🏠 Course Home](../../README.md) · [⬆️ Module](../../modules/module_04/README.md) · [⏫ Phase](../../phases/phase_02/README.md)
