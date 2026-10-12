@@ -68,6 +68,6 @@ This assignment is worth 100 points total.
 
 | ⬅️ Previous | 📝 Index | Next ➡️ |
 |:---|:---:|---:|
-| [MP 5: Data Analytics Pipelines (Structured Streaming)](../machine_problems/mp5_structured_streaming.md) | [[All Assignments]](README.md#schedule) | [MP 7: Few-Shot Trope/Genre Classification (GenAI)](../machine_problems/mp7_genre_classification.md) |
+| [MP 5: Data Analytics Pipelines (Structured Streaming)](../machine_problems/mp5_structured_streaming.md) | [[All Assignments]](../README.md#schedule) | [MP 7: Few-Shot Trope/Genre Classification (GenAI)](../machine_problems/mp7_genre_classification.md) |
 
 [🏠 Course Home](../../README.md) · [⬆️ Module](../../modules/module_05/README.md) · [⏫ Phase](../../phases/phase_03/README.md)
