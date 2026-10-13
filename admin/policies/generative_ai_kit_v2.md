@@ -1,24 +1,24 @@
 ---
-yaml_schema_version: "2.5"
-doc_version: "2.1"
+yaml_schema_version: "2.6"
+doc_version: "2.2"
 updated: "2026-10-12"
 versioning_rules: "Strict monotonicity. Reject regressions."
 routing_clearance: "GENERAL - STUDENT FACING (CIS 531/731 INFRASTRUCTURE)"
 anti_cwa: "ALWAYS ASK, NEVER INFER. Ground every claim in supplied context."
 ---
 
-# Generative AI Project Kit v2.1 (CIS 531/731)
+# Generative AI Project Kit v2.2 (CIS 531/731)
 **Scope: MP 5, PS 6, MP 7, and PS 8 (Interim Report)**
 
 ## IDENTITY & MISSION
 This document outlines the Approved Data Science Workflows and Meta-Prompts for LLM Assistance in CIS 531/731. Generative AI tools (ChatGPT, Gemini, Claude, Perplexity) may be used to structure and debug your data pipeline, provided all interactions are audited via your `GenAI.pdf` file. 
 
-This v2.1 kit acts as a **Tollbooth**. The AI will not write your pipeline from scratch; it will adapt the required assignments (MP5, PS6, MP7, PS8) to your specific PS 4 proposal—but *only* if you provide the required artifacts and explicitly state your team composition to pay the toll.
+This v2.2 kit acts as a **Tollbooth**. The AI will not write your pipeline from scratch; it will adapt the required assignments (MP5, PS6, MP7, PS8) to your specific PS 4 proposal—but *only* if you provide the required artifacts and explicitly state your team composition to pay the toll.
 
 ---
 
 ## 🚨 COURSE POLICY: TEAM COMPOSITION & SCHEMA INFERENCE
-Your level of AI access depends on your course enrollment track (531 vs. 731). Before using the Tollbooth prompts, you must abide by the following schema inference rules:
+Your level of AI access depends on your course enrollment track (531 vs. 731). 
 
 1. **CIS 531 Teams (Undergraduate ONLY):** Must use a verified "Golden Path" (Tier 1) data source from GenAI Kit v1 or the course defaults. CIS 531 teams **must adopt the instructor-provided ontology schema unmodified** (INV-11). You may not use the AI to generate custom schema topologies.
 2. **CIS 731 Teams (Graduate ONLY):** A "Real-World API or Benchmark" (Tier 2) source is expected. You **must** utilize the AI to perform schema inference and derive your own custom ontology (class hierarchy, relation types, cardinalities). Reusing the unmodified instructor schema will result in an automatic failure of the contract check.
@@ -26,8 +26,8 @@ Your level of AI access depends on your course enrollment track (531 vs. 731). B
 
 ---
 
-## INITIALIZATION & GROUNDING (START HERE)
-Copy and paste the prompt below to initiate your project environment. 
+## INITIALIZATION & GROUNDING (THE "TBOX")
+Do not simply paste the block below into a chat window. You must save this block into the persistent memory of your chosen platform (e.g., ChatGPT "Project Instructions", Claude "Custom Instructions", or a Gemini "Gem"). You must also upload `04_term_project_guidelines.md`, `05_term_project_taxonomy.md`, and `06_term_project_sourcing_guide.md` to the project's knowledge base.
 
 > **[SYSTEM INSTRUCTION: CIS 531/731 PROJECT TOLLBOOTH]**
 > You are the Research Design Coordinator for CIS 531/731. Your primary function is to act as a strict tollbooth. You will help me adapt assignments MP 5, PS 6, MP 7, and PS 8 to my specific pipeline, but you must NOT generate code or schemas *ab initio*. 
@@ -38,20 +38,16 @@ Copy and paste the prompt below to initiate your project environment.
 > b) My team composition (CIS 531 Only, CIS 731 Only, or Mixed).
 > 
 > **Step 2: The Green-Light / Yellow-Light Evidence**
-> Ask me to provide the "Green-Light" or "Yellow-Light" evidence from my PS 4 proposal regarding my data source. If I do not have this evidence, advise me to query GenAI Kit v1 to establish it, or offer me the "Course Default" option (see Step 3). *(Note to student: If you have already replaced Kit v1 with v2 in this chat, feed the v1 prompt directly back into this project).*
+> Ask me to provide the "Green-Light" or "Yellow-Light" evidence from my PS 4 proposal regarding my data source. If I do not have this evidence, advise me to query GenAI Kit v1 to establish it, or offer me the "Course Default" option (see Step 3). 
 > 
 > **Step 3: The Affordance / Course Default**
 > If I tell you "I skipped PS 4" or "A - I skipped this assignment, help me with the course default," you must default all downstream advice to the standard course pipeline: **"Satellite radio caller analytics utilizing local Whisper ASR transcription and FAISS VDB ingestion."** 
-> 
-> Acknowledge these instructions and execute Step 1.
-
-*(Student Note: Ensure you have attached the files `04_term_project_guidelines.md`, `05_term_project_taxonomy.md`, and `06_term_project_sourcing_guide.md` to the chat before sending this).*
 
 ---
 
-## PHASE 3 & 4: EXECUTION PROMPTS (THE TOLLBOOTHS)
+## PHASE 3 & 4: EXECUTION PROMPTS (THE "ABOX")
 
-Use the prompts below to unlock help for specific assignments. **You must fill in the bracketed properties before sending.**
+Once your project is configured with the TBox instructions above, use the conversational prompts below in the chat window to unlock help for specific assignments. **You must fill in the bracketed properties before sending.**
 
 ### MP 5: Structured Streaming Tollbooth
 > **[PROMPT]** I am working on MP 5 (Structured Streaming). Based on my established PS 4 data source, I need help defining the `deal` contracts and the `StructType` schema. 
