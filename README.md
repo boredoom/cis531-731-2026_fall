@@ -1,7 +1,7 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "1.4"
-document_last_updated_date: "2026-10-06"
+document_version: "2.0"
+document_last_updated_date: "2026-10-12"
 -->
 
 <br>
@@ -88,8 +88,7 @@ All Teaching Assistants and GRAs operating in this repository fall under the KDD
 <details>
 <summary><b>Click to expand: Course Repository Template Directory Tree</b></summary>
 
-```
-Folder PATH listing for volume Windows
+```Folder PATH listing for volume Windows
 Volume serial number is 60E2-4FEF
 C:.
 |   README.md
@@ -101,6 +100,8 @@ C:.
 |   +---policies
 |   |       .gitkeep
 |   |       generative_ai_kit.md
+|   |       generative_ai_kit_howto.md
+|   |       office_hours_scheduling.md
 |   |       
 |   \---syllabus
 |           .gitkeep
@@ -108,21 +109,33 @@ C:.
 |           06_term_project_sourcing_guide.md
 |           
 +---assignments
-|   |   project_sprints?Term_Project_Data_Sourcing_Guide.md
+|   |   assignment_template.md
+|   |   README.md
 |   |   
 |   +---homework
+|   |       hw12_final_deliverables.md
 |   |       lab01.ipynb
 |   |       lab02.ipynb
 |   |       lab03a.ipynb
 |   |       lab03b.ipynb
 |   |       lab04.ipynb
 |   |       lab5.ipynb
+|   |       lab6.ipynb
+|   |       ps11_ethics_storytelling_dashboards.md
+|   |       ps4_proposal.md
+|   |       ps6_semantic_search_vdb_schema.md
+|   |       ps8_interim_report.md
 |   |       
 |   +---machine_problems
 |   |       .gitkeep
+|   |       mp10_interpretability_metrics.md
+|   |       mp5_structured_streaming.md
+|   |       mp7_genre_classification.md
+|   |       mp9_rag_classification_gold_standard.md
 |   |       
 |   \---project_sprints
 |           .gitkeep
+|           guidelines.md
 |           
 +---lectures
 |       lecture-11.md
@@ -132,6 +145,10 @@ C:.
 |       lecture-15.md
 |       lecture-16.md
 |       lecture-17.md
+|       lecture-18.md
+|       lecture-19.md
+|       lecture_10_slide_template.md
+|       lecture_template.md
 |       README.md
 |       
 +---modules
@@ -189,6 +206,7 @@ C:.
 |   |       
 |   +---phase_03
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   +---phase_04
 |   |       .gitkeep
@@ -214,12 +232,23 @@ C:.
 |           
 +---reading_materials
 |       .gitkeep
+|       README.md
 |       
 +---slides
 |   |   .gitkeep
 |   |   
 |   \---archive
 |           .gitkeep
+|           
++---templates
+|   \---html_layouts
+|           Golden Template - Universal Assignment Page.html
+|           Golden Template - Universal Lecture Page.html
+|           Golden Template - Universal Module Page.html
+|           Golden Template - Universal Phase Page.html
+|           Golden Template - Universal Term Project Proposal Page.html
+|           Golden-Template.html
+|           README.md
 |           
 \---term_project
     \---docker
