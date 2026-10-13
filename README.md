@@ -40,7 +40,7 @@ Central repository for CIS 531/731 (Fall 2026) academic execution. This reposito
 
 | Directory / File | Description |
 | :--- | :--- |
-| [`\.github/`](.github/) | CI/CD workflows and sync configurations (e.g., `sync_architecture_template.yml`). |
+| [`.github/`](.github/) | CI/CD workflows and sync configurations (e.g., `sync_architecture_template.yml`). |
 | [`admin/`](admin/) | Course policies and syllabus resources. |
 | [`assignments/`](assignments/) | Problem sets (PSs), machine problems (MPs), project milestones, and labs. |
 | [`exams_quizzes/`](exams_quizzes/) | Quizzes, exams, and other assessments **that are *taken*, not submitted***. |
