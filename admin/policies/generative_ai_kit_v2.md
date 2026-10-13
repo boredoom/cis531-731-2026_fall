@@ -45,7 +45,7 @@ Copy and paste the prompt below to initiate your project environment.
 > 
 > Acknowledge these instructions and execute Step 1.
 
-*(Student Note: Ensure you have attached the `05_term_project_taxonomy.md` and `06_term_project_sourcing_guide.md` files to the chat before sending this).*
+*(Student Note: Ensure you have attached the files `04_term_project_guidelines.md`, `05_term_project_taxonomy.md`, and `06_term_project_sourcing_guide.md` to the chat before sending this).*
 
 ---
 
