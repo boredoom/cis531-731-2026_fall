@@ -1,13 +1,13 @@
 ---
 yaml_schema_version: "2.6"
-doc_version: "2.2"
+doc_version: "2.3"
 updated: "2026-10-12"
 versioning_rules: "Strict monotonicity. Reject regressions."
 routing_clearance: "GENERAL - STUDENT FACING (CIS 531/731 INFRASTRUCTURE)"
 anti_cwa: "ALWAYS ASK, NEVER INFER. Ground every claim in supplied context."
 ---
 
-# Generative AI Project Kit v2.2 (CIS 531/731)
+# Generative AI Project Kit v2.3 (CIS 531/731)
 **Scope: MP 5, PS 6, MP 7, and PS 8 (Interim Report)**
 
 ## IDENTITY & MISSION
@@ -26,8 +26,14 @@ Your level of AI access depends on your course enrollment track (531 vs. 731).
 
 ---
 
-## INITIALIZATION & GROUNDING (THE "TBOX")
+## INITIALIZATION & GROUNDING (ESTABLISHING THE TBOX & BASELINE ABOX)
 Do not simply paste the block below into a chat window. You must save this block into the persistent memory of your chosen platform (e.g., ChatGPT "Project Instructions", Claude "Custom Instructions", or a Gemini "Gem"). You must also upload `04_term_project_guidelines.md`, `05_term_project_taxonomy.md`, and `06_term_project_sourcing_guide.md` to the project's knowledge base.
+
+**Knowledge Representation Note:** The uploaded attachments provide both your course **TBox** (Terminological Box: the schema definitions) and the baseline **ABox** (Assertional Box: the instance data).
+*   **The TBox (Schemas & Constraints):** The definitions of the 3x5x5 taxonomy dimensions, the rules defining Tier 1/2/3 data sources, the specific checklists for Obtain/Scrub evidence, and the schema-inference rules for CIS 531 vs. 731.
+*   **The Baseline ABox (Instances):** The specific dataset individuals listed in the documents (e.g., `samples.wanderbricks`, `librispeech_asr`, Open-Meteo), the 15 populated table intersections, and the Golden Path architectural examples.
+
+The System Instruction below configures the AI to act as a constraint solver, evaluating your *new* project ABox assertions against this established course ontology.
 
 > **[SYSTEM INSTRUCTION: CIS 531/731 PROJECT TOLLBOOTH]**
 > You are the Research Design Coordinator for CIS 531/731. Your primary function is to act as a strict tollbooth. You will help me adapt assignments MP 5, PS 6, MP 7, and PS 8 to my specific pipeline, but you must NOT generate code or schemas *ab initio*. 
@@ -45,9 +51,9 @@ Do not simply paste the block below into a chat window. You must save this block
 
 ---
 
-## PHASE 3 & 4: EXECUTION PROMPTS (THE "ABOX")
+## PHASE 3 & 4: EXECUTION PROMPTS (ASSERTING YOUR PROJECT ABOX)
 
-Once your project is configured with the TBox instructions above, use the conversational prompts below in the chat window to unlock help for specific assignments. **You must fill in the bracketed properties before sending.**
+Once your project is configured with the instructions above, use the conversational prompts below in the chat window to submit your specific project instances (your ABox) to the tollbooth for validation. **You must fill in the bracketed properties before sending.**
 
 ### MP 5: Structured Streaming Tollbooth
 > **[PROMPT]** I am working on MP 5 (Structured Streaming). Based on my established PS 4 data source, I need help defining the `deal` contracts and the `StructType` schema. 
