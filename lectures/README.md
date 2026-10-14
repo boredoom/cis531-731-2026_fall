@@ -1,4 +1,65 @@
-## Lecture Schedule — CIS 531/731, Fall 2026 (Final, 43 Lectures)
+<!--
+---
+yaml_schema_version: "2.2"
+document_version: "1.0"
+document_last_updated_date: "2026-10-12"
+document_monotonicity: "REQUIRED"
+routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
+---
+-->
+
+<br>
+
+<div align="center">
+ <strong>🏫 Active Course Repositories:</strong> &nbsp;
+ 🏗️ <a href="https://github.com/kddresearch/course-architecture-base">Architecture Base</a> &nbsp;|&nbsp;
+ 🤖 CIS 530/730 &nbsp;|&nbsp;
+ 📊 CIS 531/731 &nbsp;|&nbsp;
+ 📈 CIS 732 &nbsp;|&nbsp;
+ 🎨 CIS 536/736 &nbsp;|&nbsp;
+ 👁️ CIS 798 X &nbsp;|&nbsp;
+ 🧠 CIS 830
+</div>
+
+<div align="center">
+ <h1>📊 CIS 531/731 - Data Science Systems</h1>
+ <p>
+ <strong>Semester:</strong> Fall 2026 | <strong>Instructor:</strong> William H. Hsu<br>
+ <strong>Status:</strong> ACTIVE | <strong>Canvas LMS:</strong> <a href="https://k-state.instructure.com/courses/201513">Closed SSO Portal</a>
+ </p>
+</div>
+
+<hr>
+
+<div align="center">
+ <h2>📂 Directory: lectures</h2>
+ <p>
+ <strong>Status:</strong> ACTIVE | <strong>Maintainer:</strong> Course Maintainers / KDD Lab
+ </p>
+</div>
+
+<hr>
+
+## 📖 Overview
+
+This directory houses the official lecture schedule, slide decks, module breakdowns, and assigned reading materials for CIS 531/731 (Data Science Systems) for the Fall 2026 semester. The curriculum spans 43 structured lectures across 12 foundational modules, covering PySpark architectures, containerized environments, data streaming, vector database indexing, generative AI applications, EDA visualization, model evaluation, and MLOps deployment.
+
+> **⚠️ Sub-Directory Routing Notice**
+> This directory serves a specific pedagogical function. Ensure that artifacts committed here belong in this directory, rather than a different course module or upstream folder.
+
+<hr>
+
+## 🗂️ Directory Structure
+
+| Subdirectory / File | Description |
+| :--- | :--- |
+| `modules/` | Module-specific lecture notes, code notebooks, and supplementary lab guides. |
+| `slides/` | Compiled PDF and HTML slide decks corresponding to each lecture. |
+| `README.md` | This file containing the master lecture schedule and reading ledger. |
+
+<hr>
+
+## 📅 Lecture Schedule — CIS 531/731, Fall 2026 (Final, 43 Lectures)
 
 | Week | Date | Lecture # | Topic | Assigned Reading |
 |---|---|---|---|---|
@@ -50,3 +111,19 @@
 | 16 | Mon 07 Dec 2026 | 40 | Module 13 – Special Topics: Agentic AI Systems Overview *(Extra-Credit Presentations begin after this lecture)* | Software Engineering at Google (Winters et al.); Docker "Get Started" |
 | 16 | Wed 09 Dec 2026 | 41 | Module 13 – Special Topics: Frontier Directions in Responsive Analytics | — |
 | 16 | Fri 11 Dec 2026 | 42 | Module 13 – Special Topics: Course Synthesis & Wrap-Up (last day of classes) | — |
+
+<hr>
+
+## 🦅 Standard Operating Procedures (SOPs)
+
+All instructional staff interacting with this directory must adhere to the following protocols:
+
+* **Protocol 1 (SSOT Paramountcy):** Do not update content directly in Canvas. Markdown files in this directory must be updated first, and the HTML mirrored from them to preserve the GitOps ledger.
+* **Protocol 2 (Schedule Integrity):** Any changes to lecture dates, topics, or assigned readings must be synchronized across the master schedule table and corresponding module READMEs.
+* **Protocol 3 (Resource Archival):** Past semester lecture archives must be moved to `archive/` following final grade submission and verification.
+
+<br>
+<hr>
+<p align="center">
+ <i>Maintained by the <a href="https://github.com/kddresearch">Knowledge Discovery in Databases (KDD) Lab</a> at Kansas State University.</i>
+</p>
