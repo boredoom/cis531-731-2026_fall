@@ -1,7 +1,7 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.0"
-document_last_updated_date: "2026-10-12"
+document_version: "2.1"
+document_last_updated_date: "2026-10-13"
 -->
 
 <br>
@@ -50,6 +50,7 @@ Central repository for CIS 531/731 (Fall 2026) academic execution. This reposito
 | [`platforms/`](platforms/) | Platform-specific configurations and assets (Canvas, Gemini, Piazza). |
 | [`reading_materials/`](reading_materials/) | Assigned papers, texts, and supplementary reading. |
 | [`slides/`](slides/) | Slide decks and archived presentations. |
+| [`templates/`](templates/) | HTML and Markdown templates for Canvas and other learning management systems. |
 | [`term_project/`](term_project/) | Rubrics, sprint specs, and `docker` compute configs for the term project. |
 | [`README.md`](README.md) | This file. |
 
