@@ -1,6 +1,7 @@
 # PS 4: Self-Service Feedback & Iteration Guide
 
 **Repository Path:** `admin/policies/ps4_self_service_feedback_guide.md`
+**Version:** 1.1
 
 This guide provides the necessary infrastructure to generate rigorous, rubric-aligned feedback on your PS 4 Term Project Proposal and execute pipeline feasibility audits.
 
@@ -28,7 +29,14 @@ To execute objective self-critique, we have adapted three specialized KDD Lab pe
   * **Public Repo Path:** `admin/policies/prompts/perplexity_systems_engineering_auditor.md`
   * **Role:** Adapted to evaluate data science pipelines, dataset APIs, and PySpark/Databricks scaling. It conducts adversarial interoperability audits backed by official documentation to identify rate limits, schema variation, and ingestion bottlenecks.
 
-## 4. Execution Prompts
+## 4. Team Composition & Greenlight Stipulations
+When using the specialized auditor personas to evaluate your proposal, your project's approval is strictly governed by your team's enrollment track. You must ensure your project meets these conditions before proceeding:
+
+1. **CIS 531-Only Teams:** Your project will only be greenlit if the AI kit returns a "Golden Path" (Tier 1) result on your data sourcing plan.
+2. **CIS 731-Only Teams:** There must be no "Tarpit" (Tier 3) or indeterminate results; only green (Tier 1) and yellow (Tier 2) sources are permitted. Furthermore, when applying the rubric, each edition of the AI kit must be prompted to require best practices for implementing any "yellow" OSEMN stages for which the 731 student is responsible.
+3. **Mixed 531/731 Teams:** Every OSEMN stage associated with a "yellow" (Tier 2) data source MUST have a 731 student explicitly responsible for it.
+
+## 5. Execution Prompts
 
 ### a) Maintaining State Across Platforms
 When using the Perplexity PLC or SEA personas to discover data sources or audit code, **you must attach the raw output from those queries back into your main GenAI Kit v2 workspace** to maintain project continuity.
@@ -48,7 +56,12 @@ Based on this, evaluate my proposed pipeline design for the Scrub and Explore st
 ```text
 I have attached the feedback on my PS 4 proposal from the Claude Critical Reviewer (or the PI). My team composition is [CIS 531 Only / CIS 731 Only / Mixed]. 
 
-Based on this feedback and the course taxonomy, generate a strict sourcing prompt for the Perplexity Project Lifecycle Coordinator. Ensure the generated prompt explicitly includes my 1-sentence hypothesis to unlock the Summary Function, and my impact metric justification to unlock the Pipeline Design function.
+Based on this feedback, the course taxonomy, and the Team Composition Greenlight Stipulations, generate a strict sourcing prompt for the Perplexity Project Lifecycle Coordinator. 
+
+Ensure the generated prompt explicitly:
+1. Includes my 1-sentence hypothesis to unlock the Summary Function.
+2. Includes my impact metric justification to unlock the Pipeline Design function.
+3. Instructs the PLC to enforce the greenlighting rules for my team composition (e.g., verifying 531 teams have a Golden Path source, ensuring 731 students own all yellow-tier OSEMN stages, and demanding best practices for yellow stages).
 ```
 
 ### d) Generic Auditing Prompt (For the Perplexity SEA)
@@ -64,5 +77,7 @@ Evaluate API rate limits, schema stability, and PySpark version compatibility. P
 ```text
 I have attached my PS 4 feedback. Based on my identified Tier 1/Tier 2 data source and my assigned OSEMN tasks, generate an auditing prompt for the Perplexity Systems Engineering Auditor. 
 
-The prompt must direct the SEA to evaluate the specific API limitations, Python library versioning requirements, and data ingestion bottlenecks unique to my proposed architecture.
+The prompt must direct the SEA to:
+1. Evaluate the specific API limitations, Python library versioning requirements, and data ingestion bottlenecks unique to my proposed architecture.
+2. Explicitly apply the Greenlight Stipulations for my [CIS 531 Only / CIS 731 Only / Mixed] team composition, verifying that any "yellow" source stages are properly assigned to 731 students and accompanied by best practices.
 ```
