@@ -1,8 +1,8 @@
 <!--
 ---
 yaml_schema_version: "2.2"
-document_version: "1.0"
-document_last_updated_date: "2026-10-12"
+document_version: "1.1"
+document_last_updated_date: "2026-10-19"
 document_monotonicity: "REQUIRED"
 routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 ---
@@ -14,9 +14,9 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
  <strong>🏫 Active Course Repositories:</strong> &nbsp;
  🏗️ <a href="https://github.com/kddresearch/course-architecture-base">Architecture Base</a> &nbsp;|&nbsp;
  🤖 CIS 530/730 &nbsp;|&nbsp;
- 📊 CIS 531/731 &nbsp;|&nbsp;
+ 📊 <a href="https://github.com/kddresearch/cis531-731-2026_fall">CIS 531/731</a> &nbsp;|&nbsp;
  📈 CIS 732 &nbsp;|&nbsp;
- 🎨 CIS 536/736 &nbsp;|&nbsp;
+ 🎨 <a href="https://github.com/kddresearch/cis536-736-2026_fall">CIS 536/736</a> &nbsp;|&nbsp;
  👁️ CIS 798 X &nbsp;|&nbsp;
  🧠 CIS 830
 </div>
