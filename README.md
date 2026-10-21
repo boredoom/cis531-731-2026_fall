@@ -1,19 +1,26 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "1.0"
-document_last_updated_date: "2026-09-11"
+document_version: "2.1"
+document_last_updated_date: "2026-10-13"
 -->
+
+<br>
 
 <div align="center">
  <strong>🏫 Active Course Repositories:</strong> &nbsp;
- <a href="https://github.com/kddresearch/cis531-731-2026_fall">CIS 531/731</a> &nbsp;|&nbsp;
- <a href="https://github.com/kddresearch/cis536-736-2026_fall">CIS 536/736</a>
+ 🏗️ <a href="https://github.com/kddresearch/course-architecture-base">Architecture Base</a> &nbsp;|&nbsp;
+ 🤖 CIS 530/730 &nbsp;|&nbsp;
+ 📊 <a href="https://github.com/kddresearch/cis531-731-2026_fall">CIS 531/731</a> &nbsp;|&nbsp;
+ 📈 CIS 732 &nbsp;|&nbsp;
+ 🎨 <a href="https://github.com/kddresearch/cis536-736-2026_fall">CIS 536/736</a> &nbsp;|&nbsp;
+ 👁️ CIS 798 X &nbsp;|&nbsp;
+ 🧠 CIS 830
 </div>
 
 <div align="center">
- <h1>🧪 CIS 531/731 - Programming Techniques for Data Science and Analytics</h1>
+ <h1>📊 CIS 531/731 - Programming Techniques for Data Science and Analytics</h1>
  <p>
- <strong>Semester:</strong> Fall 2026 | <strong>Instructor:</strong> William H. Hsu, Ph.D.<br>
+ <strong>Semester:</strong> Fall 2026 | <strong>Instructor:</strong> William H. Hsu<br>
  <strong>Status:</strong> ACTIVE | <strong>Canvas LMS:</strong> <a href="https://k-state.instructure.com/courses/201513">Closed SSO Portal</a>
  </p>
 </div>
@@ -33,11 +40,19 @@ Central repository for CIS 531/731 (Fall 2026) academic execution. This reposito
 
 | Directory / File | Description |
 | :--- | :--- |
-| `assignments/` | Machine Problems (MPs), homework specifications, and project rubrics. |
-| `lectures/` | Slide assets, lecture notes, and recording links. |
-| `docker/` | DevContainer specifications, environment variables, and compute fallback scripts. |
-| `src/` | Starter code, grading scripts, and baseline implementations. |
-| `README.md` | This file. |
+| [`.github/`](.github/) | CI/CD workflows and sync configurations (e.g., `sync_architecture_template.yml`). |
+| [`admin/`](admin/) | Course policies and syllabus resources. |
+| [`assignments/`](assignments/) | Problem sets (PSs), machine problems (MPs), project milestones, and labs. |
+| [`exams_quizzes/`](exams_quizzes/) | Quizzes, exams, and other assessments **that are *taken*, not submitted* **. |
+| [`lectures/`](lectures/) | Core lecture materials and related assets. |
+| [`modules/`](modules/) | Weekly/topic-based module directories (`module_00` to `module_13`). |
+| [`phases/`](phases/) | High-level course progression phase wrappers (`phase_01` to `phase_05`). |
+| [`platforms/`](platforms/) | Platform-specific configurations and assets (Canvas, Gemini, Piazza). |
+| [`reading_materials/`](reading_materials/) | Assigned papers, texts, and supplementary reading. |
+| [`slides/`](slides/) | Slide decks and archived presentations. |
+| [`templates/`](templates/) | HTML and Markdown templates for Canvas and other learning management systems. |
+| [`term_project/`](term_project/) | Rubrics, sprint specs, and `docker` compute configs for the term project. |
+| [`README.md`](README.md) | This file. |
 
 <hr>
 
@@ -52,7 +67,6 @@ Central repository for CIS 531/731 (Fall 2026) academic execution. This reposito
 git clone [https://github.com/kddresearch/cis531-731-2026_fall.git](https://github.com/kddresearch/cis531-731-2026_fall.git)
 cd cis531-731-2026_fall
 # Open in VS Code to initialize the DevContainer
-
 ```
 
 ## 🦅 Lab Execution Protocols
@@ -60,18 +74,185 @@ cd cis531-731-2026_fall
 All Teaching Assistants and GRAs operating in this repository fall under the KDD Lab **Keep Flying Directive v2.1**.
 
 * **Observable State:** Progress is measured by commits, drafts, logs, and reproducible outputs—not intentions.
-
-
 * **The Triad:** When opening an issue or Pull Request, provide explicit goals, current blockers, and proposed next actions.
-
-
 * **Artifact-Gated Routing:** Do not request synchronous meetings for routine status updates. Push your grading state or syllabus updates to this repository first.
-
-
 
 ## 👥 Instructional Staff
 
 | Role | Name | GitHub Handle |
 | --- | --- | --- |
-| **Instructor** | William H. Hsu | [@banazir](https://www.google.com/search?q=https://github.com/banazir) |
-| **Head TA** | [TBD] | [@GITHUB_HANDLE] |
+| **Instructor** | William H. Hsu | [@banazir](https://github.com/banazir) |
+| **Teaching Asssistant** | Joshua Garcia | |
+
+## 📂 Repository Structure (Full Tree)
+
+<details>
+<summary><b>Click to expand: Course Repository Template Directory Tree</b></summary>
+
+```Folder PATH listing for volume Windows
+Volume serial number is 60E2-4FEF
+C:.
+|   README.md
+|   structure_dump.txt
+|   
++---admin
+|   |   .gitkeep
+|   |   
+|   +---policies
+|   |       .gitkeep
+|   |       generative_ai_kit.md
+|   |       generative_ai_kit_howto.md
+|   |       office_hours_scheduling.md
+|   |       
+|   \---syllabus
+|           .gitkeep
+|           05_term_project_taxonomy.md
+|           06_term_project_sourcing_guide.md
+|           
++---assignments
+|   |   assignment_template.md
+|   |   README.md
+|   |   
+|   +---homework
+|   |       hw12_final_deliverables.md
+|   |       lab01.ipynb
+|   |       lab02.ipynb
+|   |       lab03a.ipynb
+|   |       lab03b.ipynb
+|   |       lab04.ipynb
+|   |       lab5.ipynb
+|   |       lab6.ipynb
+|   |       ps11_ethics_storytelling_dashboards.md
+|   |       ps4_proposal.md
+|   |       ps6_semantic_search_vdb_schema.md
+|   |       ps8_interim_report.md
+|   |       
+|   +---machine_problems
+|   |       .gitkeep
+|   |       mp10_interpretability_metrics.md
+|   |       mp5_structured_streaming.md
+|   |       mp7_genre_classification.md
+|   |       mp9_rag_classification_gold_standard.md
+|   |       
+|   \---project_sprints
+|           .gitkeep
+|           guidelines.md
+|           
++---lectures
+|       lecture-11.md
+|       lecture-12.md
+|       lecture-13.md
+|       lecture-14.md
+|       lecture-15.md
+|       lecture-16.md
+|       lecture-17.md
+|       lecture-18.md
+|       lecture-19.md
+|       lecture_10_slide_template.md
+|       lecture_template.md
+|       README.md
+|       
++---modules
+|   +---module_00
+|   |       .gitkeep
+|   |       
+|   +---module_01
+|   |       .gitkeep
+|   |       
+|   +---module_02
+|   |       .gitkeep
+|   |       
+|   +---module_03
+|   |       .gitkeep
+|   |       
+|   +---module_04
+|   |       .gitkeep
+|   |       README.md
+|   |       
+|   +---module_05
+|   |       .gitkeep
+|   |       README.md
+|   |       
+|   +---module_06
+|   |       .gitkeep
+|   |       README.md
+|   |       
+|   +---module_07
+|   |       .gitkeep
+|   |       
+|   +---module_08
+|   |       .gitkeep
+|   |       
+|   +---module_09
+|   |       .gitkeep
+|   |       
+|   +---module_10
+|   |       .gitkeep
+|   |       
+|   +---module_11
+|   |       .gitkeep
+|   |       
+|   +---module_12
+|   |       .gitkeep
+|   |       
+|   \---module_13
+|           .gitkeep
+|           
++---phases
+|   +---phase_01
+|   |       .gitkeep
+|   |       
+|   +---phase_02
+|   |       .gitkeep
+|   |       
+|   +---phase_03
+|   |       .gitkeep
+|   |       README.md
+|   |       
+|   +---phase_04
+|   |       .gitkeep
+|   |       
+|   \---phase_05
+|           .gitkeep
+|           
++---platforms
+|   +---canvas
+|   |       .gitkeep
+|   |       
+|   +---gemini
+|   |       .gitkeep
+|   |       
+|   +---github
+|   |       github_intro.md
+|   |       
+|   +---moodle
+|   |       .gitkeep
+|   |       
+|   \---piazza
+|           .gitkeep
+|           
++---reading_materials
+|       .gitkeep
+|       README.md
+|       
++---slides
+|   |   .gitkeep
+|   |   
+|   \---archive
+|           .gitkeep
+|           
++---templates
+|   \---html_layouts
+|           Golden Template - Universal Assignment Page.html
+|           Golden Template - Universal Lecture Page.html
+|           Golden Template - Universal Module Page.html
+|           Golden Template - Universal Phase Page.html
+|           Golden Template - Universal Term Project Proposal Page.html
+|           Golden-Template.html
+|           README.md
+|           
+\---term_project
+    \---docker
+            Dockerfile
+```
+</details>
