@@ -1,0 +1,8 @@
+{"id":"380a18e2-45e1-4876-9c48-2831518f8876","batchId":0,"numInputRows":50,"inputRowsPerSecond":47.61,"processedRowsPerSecond":58.13,"batchDuration":860,"stateOperators":[{"numRowsTotal":24,"memoryUsedBytes":45120}]}
+{"id":"380a18e2-45e1-4876-9c48-2831518f8876","batchId":1,"numInputRows":50,"inputRowsPerSecond":49.85,"processedRowsPerSecond":63.29,"batchDuration":790,"stateOperators":[{"numRowsTotal":48,"memoryUsedBytes":88320}]}
+{"id":"380a18e2-45e1-4876-9c48-2831518f8876","batchId":2,"numInputRows":50,"inputRowsPerSecond":49.70,"processedRowsPerSecond":61.72,"batchDuration":810,"stateOperators":[{"numRowsTotal":72,"memoryUsedBytes":131450}]}
+{"id":"380a18e2-45e1-4876-9c48-2831518f8876","batchId":3,"numInputRows":50,"inputRowsPerSecond":49.65,"processedRowsPerSecond":62.11,"batchDuration":805,"stateOperators":[{"numRowsTotal":96,"memoryUsedBytes":174580}]}
+{"id":"380a18e2-45e1-4876-9c48-2831518f8876","batchId":4,"numInputRows":50,"inputRowsPerSecond":49.80,"processedRowsPerSecond":59.88,"batchDuration":835,"stateOperators":[{"numRowsTotal":120,"memoryUsedBytes":217800}]}
+{"id":"380a18e2-45e1-4876-9c48-2831518f8876","batchId":5,"numInputRows":50,"inputRowsPerSecond":49.75,"processedRowsPerSecond":58.47,"batchDuration":855,"stateOperators":[{"numRowsTotal":144,"memoryUsedBytes":261020}]}
+{"id":"380a18e2-45e1-4876-9c48-2831518f8876","batchId":6,"numInputRows":50,"inputRowsPerSecond":49.60,"processedRowsPerSecond":60.24,"batchDuration":830,"stateOperators":[{"numRowsTotal":168,"memoryUsedBytes":304240}]}
+{"id":"380a18e2-45e1-4876-9c48-2831518f8876","batchId":7,"numInputRows":50,"inputRowsPerSecond":49.70,"processedRowsPerSecond":52.63,"batchDuration":950,"stateOperators":[{"numRowsTotal":144,"memoryUsedBytes":261400}]}
