@@ -1,7 +1,7 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.3"
-document_last_updated_date: "2026-10-22"
+document_version: "2.4"
+document_last_updated_date: "2026-10-26"
 -->
 
 <br>
@@ -139,6 +139,7 @@ C:.
 |   |       lab04.ipynb
 |   |       lab5.ipynb
 |   |       lab6.ipynb
+|   |       lab7.ipynb
 |   |       ps11_ethics_storytelling_dashboards.md
 |   |       ps4_proposal.md
 |   |       ps6_semantic_search_vdb_schema.md
@@ -172,6 +173,7 @@ C:.
 |       lecture-21.md
 |       lecture-22.md
 |       lecture-23.md
+|       lecture-24.md
 |       lecture_10_slide_template.md
 |       lecture_template.md
 |       README.md
@@ -232,9 +234,11 @@ C:.
 |   |   
 |   +---phase_01
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   +---phase_02
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   +---phase_03
 |   |       .gitkeep
@@ -242,9 +246,11 @@ C:.
 |   |       
 |   +---phase_04
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   \---phase_05
 |           .gitkeep
+|           README.md
 |           
 +---platforms
 |   +---canvas
