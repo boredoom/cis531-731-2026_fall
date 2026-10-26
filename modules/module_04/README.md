@@ -1,7 +1,7 @@
 <!--
 ---
 yaml_schema_version: "2.2"
-document_version: "1.2"
+document_version: "1.3"
 document_last_updated_date: "2026-10-26"
 document_monotonicity: "REQUIRED"
 routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
@@ -12,11 +12,11 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 
 <div align="center">
  <strong>🏫 Active Course Repositories:</strong> &nbsp;
- 🏗️ <a href="https://github.com/kddresearch/course-architecture-base">Architecture Base</a> &nbsp;|&nbsp;
+ 🏗️ [Architecture Base](https://github.com/kddresearch/course-architecture-base) &nbsp;|&nbsp;
  🤖 CIS 530/730 &nbsp;|&nbsp;
- 📊 <a href="https://github.com/kddresearch/cis531-731-2026_fall">CIS 531/731</a> &nbsp;|&nbsp;
+ 📊 [CIS 531/731](https://github.com/kddresearch/cis531-731-2026_fall) &nbsp;|&nbsp;
  📈 CIS 732 &nbsp;|&nbsp;
- 🎨 <a href="https://github.com/kddresearch/cis536-736-2026_fall">CIS 536/736</a> &nbsp;|&nbsp;
+ 🎨 [CIS 536/736](https://github.com/kddresearch/cis536-736-2026_fall) &nbsp;|&nbsp;
  👁️ CIS 798 X &nbsp;|&nbsp;
  🧠 CIS 830
 </div>
@@ -25,7 +25,7 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
  <h1>📊 CIS 531/731 - Programming Techniques for Data Science and Analytics</h1>
  <p>
  <strong>Semester:</strong> Fall 2026 | <strong>Instructor:</strong> William H. Hsu<br>
- <strong>Status:</strong> ACTIVE | <strong>Canvas LMS:</strong> <a href="https://k-state.instructure.com/courses/201513">Closed SSO Portal</a>
+ <strong>Status:</strong> ACTIVE | <strong>Canvas LMS:</strong> [Closed SSO Portal](https://k-state.instructure.com/courses/201513)
  </p>
 </div>
 
@@ -34,7 +34,7 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 <div align="center">
  <h2>📦 Module 04: Data Analytics Pipelines: Streaming & Data Lakes</h2>
  <p>
- <strong>Phase:</strong> <a href="../../phases/phase_02">Phase 2: Obtain & Ingest</a> | <strong>Maintainer:</strong> William H. Hsu
+ <strong>Phase:</strong> [Phase 2: Obtain & Ingest](../../phases/phase_02) | <strong>Maintainer:</strong> William H. Hsu
  </p>
 </div>
 
@@ -60,17 +60,17 @@ This directory contains the localized pedagogical artifacts, demonstration code,
 
 ## 🔗 Associated Course Materials
 
-* **Lectures:** [Lec 11](../../lectures/lecture-11.md) | [Lec 12](../../lectures/lecture-12.md) | [Lec 13](../../lectures/lecture-13.md)
-* **Active Assignments:** [Lab 04 Notebook](../../assignments/homework/lab04.ipynb) | [MP5 Specification](../../assignments/machine_problems/mp5_structured_streaming.md) *(HW4 released, MP3 due)*
-* **Required Reading:** "The Dataflow Model" (Akidau et al.); Structured Streaming Programming Guide, Spark 3.5.7
+- **Lectures:** [Lec 11](../../lectures/lecture-11.md) | [Lec 12](../../lectures/lecture-12.md) | [Lec 13](../../lectures/lecture-13.md)
+- **Active Assignments:** [Lab 04 Notebook](../../assignments/homework/lab04.ipynb) | [MP5 Specification](../../assignments/machine_problems/mp5_structured_streaming.md) *(HW4 released, MP3 due)*
+- **Required Reading:** "The Dataflow Model" (Akidau et al.); Structured Streaming Programming Guide, Spark 3.5.7
 
 ## 🦅 Standard Operating Procedures (SOPs)
 
 All instructional staff interacting with this module directory must adhere to the following protocols:
 
-* **Protocol 1 (SSOT Paramountcy):** Do not update content directly in Canvas. Markdown files and localized scripts in this directory must be updated first, and the HTML mirrored from them to preserve the GitOps ledger.
-* **Protocol 2 (Artifact Segregation):** Do not duplicate master assignment files or lecture notes here. Use the "Associated Course Materials" cross-links provided above.
-* **Protocol 3 (Deprecation):** Ensure any outdated code snippets in this module are formally tagged as `[ARCHIVED]` if updating for a new semester to prevent student confusion.
+- **Protocol 1 (SSOT Paramountcy):** Do not update content directly in Canvas. Markdown files and localized scripts in this directory must be updated first, and the HTML mirrored from them to preserve the GitOps ledger.
+- **Protocol 2 (Artifact Segregation):** Do not duplicate master assignment files or lecture notes here. Use the "Associated Course Materials" cross-links provided above.
+- **Protocol 3 (Deprecation):** Ensure any outdated code snippets in this module are formally tagged as `[ARCHIVED]` if updating for a new semester to prevent student confusion.
 
 <br>
 <hr>
@@ -82,7 +82,7 @@ All instructional staff interacting with this module directory must adhere to th
 
 | Phase | Module | Lecture | Date |
 | :--- | :--- | :--- | :--- |
-| **Phase 2:** Pipeline Construction | **Module 4:** Data Analytics Pipelines & Streaming | **Lectures 11-13** | Sep 21 – Sep 25, 2026 |
+| [**Phase 2:** Obtain & Ingest](../../phases/phase_02) | **Module 4:** Data Analytics Pipelines & Streaming | **Lectures 11-13** | Sep 21 – Sep 25, 2026 |
 
 ---
 
