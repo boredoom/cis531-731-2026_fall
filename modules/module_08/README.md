@@ -34,7 +34,7 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 <div align="center">
  <h2>📦 Module 08: Model: Retrieval-Augmented Classification & Generational Convolution</h2>
  <p>
- <strong>Phase:</strong> <a href="../../phases/phase_04">Phase 4</a> | <strong>Maintainer:</strong> William H. Hsu
+ <strong>Phase:</strong> <a href="../../phases/phase_04">Phase 4: Explore & Model</a> | <strong>Maintainer:</strong> William H. Hsu
  </p>
 </div>
 
