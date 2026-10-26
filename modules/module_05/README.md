@@ -34,7 +34,7 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 <div align="center">
  <h2>📦 Module 05: Scrub: Chunking, Embedding Generation & VDB Schema Design</h2>
  <p>
- <strong>Phase:</strong> <a href="../../phases/phase_03">Phase 3: Scrub & Embed</a> | <strong>Maintainer:</strong> William H. Hsu
+ <strong>Phase:</strong> [Scrub & Embed](../../phases/phase_03/README.md) | <strong>Maintainer:</strong> William H. Hsu
  </p>
 </div>
 
@@ -82,7 +82,7 @@ All instructional staff interacting with this module directory must adhere to th
 
 | Phase | Module | Lecture | Date |
 | :--- | :--- | :--- | :--- |
-| **Phase 2:** Pipeline Execution | **Module 5:** Scrub (Chunking & Embedding Generation) | **Lectures 14-16** | Sep 28 – Oct 02, 2026 |
+| [**Phase 3:**](../../phases/phase_03) Scrub & Embed | **Module 5:** Scrub (Chunking & Embedding Generation) | **Lectures 14-16** | Sep 28 – Oct 02, 2026 |
 
 ---
 
