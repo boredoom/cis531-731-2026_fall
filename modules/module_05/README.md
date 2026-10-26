@@ -34,7 +34,7 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 <div align="center">
  <h2>📦 Module 05: Scrub: Chunking, Embedding Generation & VDB Schema Design</h2>
  <p>
- <strong>Phase:</strong> [Scrub & Embed](../../phases/phase_03/README.md) | <strong>Maintainer:</strong> William H. Hsu
+ <strong>Phase:</strong> <a href="../../phases/phase_03">Phase 3: Scrub & Embed</a>| <strong>Maintainer:</strong> William H. Hsu
  </p>
 </div>
 
