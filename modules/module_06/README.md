@@ -1,4 +1,84 @@
-# CIS 531/731: Introduction to Data Science
+<!--
+---
+yaml_schema_version: "2.2"
+document_version: "1.1"
+document_last_updated_date: "2026-10-26"
+document_monotonicity: "REQUIRED"
+routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
+---
+-->
+
+<br>
+
+<div align="center">
+ <strong>🏫 Active Course Repositories:</strong> &nbsp;
+ 🏗️ <a href="https://github.com/kddresearch/course-architecture-base">Architecture Base</a> &nbsp;|&nbsp;
+ 🤖 CIS 530/730 &nbsp;|&nbsp;
+ 📊 <a href="https://github.com/kddresearch/cis531-731-2026_fall">CIS 531/731</a> &nbsp;|&nbsp;
+ 📈 CIS 732 &nbsp;|&nbsp;
+ 🎨 <a href="https://github.com/kddresearch/cis536-736-2026_fall">CIS 536/736</a> &nbsp;|&nbsp;
+ 👁️ CIS 798 X &nbsp;|&nbsp;
+ 🧠 CIS 830
+</div>
+
+<div align="center">
+ <h1>📊 CIS 531/731 - Programming Techniques for Data Science and Analytics</h1>
+ <p>
+ <strong>Semester:</strong> Fall 2026 | <strong>Instructor:</strong> William H. Hsu<br>
+ <strong>Status:</strong> ACTIVE | <strong>Canvas LMS:</strong> <a href="https://k-state.instructure.com/courses/201513">Closed SSO Portal</a>
+ </p>
+</div>
+
+<hr>
+
+<div align="center">
+ <h2>📦 Module 06: GenAI & LLMs: Candidates, Code, Classification</h2>
+ <p>
+ <strong>Phase:</strong> <a href="../../phases/phase_03">Phase 3: Scrub & Embed</a> | <strong>Maintainer:</strong> William H. Hsu
+ </p>
+</div>
+
+<hr>
+
+## 📖 Overview
+
+This directory contains the localized pedagogical artifacts, demonstration code, and operational files strictly related to **Module 06**. This module spans `5` lectures and focuses on Generative AI and LLMs, candidate generation, model selection, few-shot trope/genre classification, and embedding-backed classification labs *(Note: Wildcat Pause Day Fri 09 Oct)*.
+
+> **⚠️ Module Routing Notice**
+> Core lecture markdown files and major assignments live in the top-level `lectures/` and `assignments/` directories to maintain structural parity. Use this module directory exclusively for localized data snippets, lab code examples, module-specific images, or environment configs required for this week's content.
+
+<hr>
+
+## 🗂️ Module Artifacts
+
+| Subdirectory / File | Description |
+| :--- | :--- |
+| `lab6.ipynb` | Lab 6: Model selection and embedding-backed classification lab notebook |
+| `README.md` | This module overview and index. |
+
+<hr>
+
+## 🔗 Associated Course Materials
+
+* **Lectures:** [Lec 17](../../lectures/lecture-17.md) | [Lec 18](../../lectures/lecture-18.md) | [Lec 19](../../lectures/lecture-19.md) | [Lec 20](../../lectures/lecture-20.md) | [Lec 21](../../lectures/lecture-21.md)
+* **Active Assignments:** [Lab 6 Notebook](../../assignments/homework/lab6.ipynb) | [MP7 Genre Classification Specification](../../assignments/machine_problems/mp7_genre_classification.md) *(MP5 released, MP6 released, MP5 due)*
+* **Required Reading:** Speech and Language Processing, Chs. 6–8 (Jurafsky & Martin); Hugging Face Transformers "Text Classification"
+
+## 🦅 Standard Operating Procedures (SOPs)
+
+All instructional staff interacting with this module directory must adhere to the following protocols:
+
+* **Protocol 1 (SSOT Paramountcy):** Do not update content directly in Canvas. Markdown files and localized scripts in this directory must be updated first, and the HTML mirrored from them to preserve the GitOps ledger.
+* **Protocol 2 (Artifact Segregation):** Do not duplicate master assignment files or lecture notes here. Use the "Associated Course Materials" cross-links provided above.
+* **Protocol 3 (Deprecation):** Ensure any outdated code snippets in this module are formally tagged as `[ARCHIVED]` if updating for a new semester to prevent student confusion.
+
+<br>
+<hr>
+<p align="center">
+ <i>Maintained by the <a href="https://github.com/kddresearch">Knowledge Discovery in Databases (KDD) Lab</a> at Kansas State University.</i>
+</p>
+
+---
 
 | Phase | Module | Lecture(s) | Date(s) |
 | :--- | :--- | :--- | :--- |
