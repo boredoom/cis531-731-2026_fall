@@ -82,7 +82,7 @@ All instructional staff interacting with this module directory must adhere to th
 
 | Phase | Module | Lecture(s) | Date(s) |
 | :--- | :--- | :--- | :--- |
-| **Phase [X]:** [Phase Name] | **Module 6:** GenAI & LLMs: Candidates, Code, Classification | **Lectures 17-21** | Mon 05 Oct - Fri 16 Oct 2026 |
+| <a href="../../phases/phase_03">**Phase 3: Scrub & Embed**</a | **Module 6:** GenAI & LLMs: Candidates, Code, Classification | **Lectures 17-21** | Mon 05 Oct - Fri 16 Oct 2026 |
 
 ---
 
