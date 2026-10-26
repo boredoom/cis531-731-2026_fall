@@ -12,11 +12,11 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 
 <div align="center">
  <strong>🏫 Active Course Repositories:</strong> &nbsp;
- 🏗️ [Architecture Base](https://github.com/kddresearch/course-architecture-base) &nbsp;|&nbsp;
+ 🏗️ <a href="https://github.com/kddresearch/course-architecture-base">Architecture Base</a> &nbsp;|&nbsp;
  🤖 CIS 530/730 &nbsp;|&nbsp;
- 📊 [CIS 531/731](https://github.com/kddresearch/cis531-731-2026_fall) &nbsp;|&nbsp;
+ 📊 <a href="https://github.com/kddresearch/cis531-731-2026_fall">CIS 531/731</a> &nbsp;|&nbsp;
  📈 CIS 732 &nbsp;|&nbsp;
- 🎨 [CIS 536/736](https://github.com/kddresearch/cis536-736-2026_fall) &nbsp;|&nbsp;
+ 🎨 <a href="https://github.com/kddresearch/cis536-736-2026_fall">CIS 536/736</a> &nbsp;|&nbsp;
  👁️ CIS 798 X &nbsp;|&nbsp;
  🧠 CIS 830
 </div>
@@ -25,7 +25,7 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
  <h1>📊 CIS 531/731 - Programming Techniques for Data Science and Analytics</h1>
  <p>
  <strong>Semester:</strong> Fall 2026 | <strong>Instructor:</strong> William H. Hsu<br>
- <strong>Status:</strong> ACTIVE | <strong>Canvas LMS:</strong> [Closed SSO Portal](https://k-state.instructure.com/courses/201513)
+ <strong>Status:</strong> ACTIVE | <strong>Canvas LMS:</strong> <a href="https://k-state.instructure.com/courses/201513">Closed SSO Portal</a>
  </p>
 </div>
 
@@ -34,7 +34,7 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 <div align="center">
  <h2>📦 Module 04: Data Analytics Pipelines: Streaming & Data Lakes</h2>
  <p>
- <strong>Phase:</strong> [Phase 2: Obtain & Ingest](../../phases/phase_02) | <strong>Maintainer:</strong> William H. Hsu
+ <strong>Phase:</strong> <a href="../../phases/phase_02">Phase 2: Obtain & Ingest</a> | <strong>Maintainer:</strong> William H. Hsu
  </p>
 </div>
 
