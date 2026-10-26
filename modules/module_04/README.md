@@ -1,7 +1,7 @@
 <!--
 ---
 yaml_schema_version: "2.2"
-document_version: "1.1"
+document_version: "1.2"
 document_last_updated_date: "2026-10-26"
 document_monotonicity: "REQUIRED"
 routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
@@ -34,7 +34,7 @@ routing_clearance: "INTERNAL - RESTRICTED TO COURSE MAINTAINERS"
 <div align="center">
  <h2>📦 Module 04: Data Analytics Pipelines: Streaming & Data Lakes</h2>
  <p>
- <strong>Phase:</strong> <a href="../../phases/phase_02">Phase 2</a> | <strong>Maintainer:</strong> William H. Hsu
+ <strong>Phase:</strong> <a href="../../phases/phase_02">Phase 2: Obtain & Ingest</a> | <strong>Maintainer:</strong> William H. Hsu
  </p>
 </div>
 
