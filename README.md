@@ -1,7 +1,7 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "2.4"
-document_last_updated_date: "2026-10-26"
+document_version: "3.0"
+document_last_updated_date: "2026-10-29"
 -->
 
 <br>
@@ -43,6 +43,7 @@ Central repository for CIS 531/731 (Fall 2026) academic execution. This reposito
 | [`.github/`](.github/) | CI/CD workflows and sync configurations (e.g., `sync_architecture_template.yml`). |
 | [`admin/`](admin/) | Course policies and syllabus resources. |
 | [`assignments/`](assignments/) | Problem sets (PSs), machine problems (MPs), project milestones, and labs. |
+| [`docs/`](docs/) | Supplemental documentation including architecture references, setup instructions, and implementation guides. |
 | [`exams_quizzes/`](exams_quizzes/) | Quizzes, exams, and other assessments **that are *taken*, not submitted* **. |
 | [`lectures/`](lectures/) | Core lecture materials and related assets. |
 | [`modules/`](modules/) | Weekly/topic-based module directories (`module_00` to `module_13`). |
@@ -113,6 +114,7 @@ C:.
 |   |   |   generative_ai_kit_v2.md
 |   |   |   office_hours_scheduling.md
 |   |   |   ps4_self_service_feedback_guide.md
+|   |   |   term_project_invariants.md
 |   |   |   
 |   |   \---prompts
 |   |           claude_critical_review_coordinator.md
@@ -132,6 +134,7 @@ C:.
 |   |   
 |   +---homework
 |   |       hw12_final_deliverables.md
+|   |       hw1_devcontainer_bringup_architecture.md
 |   |       lab01.ipynb
 |   |       lab02.ipynb
 |   |       lab03a.ipynb
@@ -148,18 +151,35 @@ C:.
 |   +---machine_problems
 |   |       .gitkeep
 |   |       mp10_interpretability_metrics.md
+|   |       mp2_devcontainer_deployment_manifest_verification.md
+|   |       mp3_real_time_asr_vector_database_ingestion.md
 |   |       mp5_structured_streaming.md
 |   |       mp7_genre_classification.md
 |   |       mp9_rag_classification_gold_standard.md
+|   |       verify_env.py
 |   |       
 |   \---project_sprints
 |           .gitkeep
 |           guidelines.md
 |           
++---docs
+|   |   .gitkeep
+|   |   
+|   +---architecture
+|   |       .gitkeep
+|   |       
+|   +---guides
+|   |       .gitkeep
+|   |       
+|   \---setup
+|           .gitkeep
+|           hw1_mp2_windows11_wsl2_docker_walkthrough.md
+|           
 +---exams_quizzes
 |       .gitkeep
 |       
 +---lectures
+|       lectture-26.md
 |       lecture-11.md
 |       lecture-12.md
 |       lecture-13.md
@@ -174,6 +194,8 @@ C:.
 |       lecture-22.md
 |       lecture-23.md
 |       lecture-24.md
+|       lecture-25.md
+|       lecture-26.md
 |       lecture_10_slide_template.md
 |       lecture_template.md
 |       README.md
@@ -185,15 +207,20 @@ C:.
 |   |   
 |   +---module_00
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   +---module_01
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   +---module_02
 |   |       .gitkeep
+|   |       hw1_mp2_windows11_wsl2_docker_walkthrough.html
+|   |       README.md
 |   |       
 |   +---module_03
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   +---module_04
 |   |       .gitkeep
@@ -213,9 +240,11 @@ C:.
 |   |       
 |   +---module_08
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   +---module_09
 |   |       .gitkeep
+|   |       README.md
 |   |       
 |   +---module_10
 |   |       .gitkeep
