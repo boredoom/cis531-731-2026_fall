@@ -1,6 +1,6 @@
 # HW 1 & MP 2 Setup Walkthrough: Windows 11 + WSL 2 + Docker Desktop DevContainer Bring-Up
 
-This guide documents the complete end-to-end setup and verification protocol for **HW 1** and **MP 2** under Windows 11, WSL 2, and Docker Desktop. Follow these steps to verify your container environment, pull the course runtime, and confirm strict manifest compatibility.
+This guide documents the complete end-to-end setup and verification protocol for [**HW 1**](../../assignments/homework/hw1_devcontainer_bringup_architecture.md) and **MP 2** under Windows 11, WSL 2, and Docker Desktop. Follow these steps to verify your container environment, pull the course runtime, and confirm strict manifest compatibility.
 
 ---
 
