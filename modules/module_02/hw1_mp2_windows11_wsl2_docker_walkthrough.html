@@ -1,0 +1,112 @@
+<div style="font-family: 'Aptos', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 900px; margin: 0 auto; line-height: 1.6; color: #2d3b45;">
+    <div style="background: linear-gradient(135deg, #4b2e83 0%, #b7a57a 100%); padding: 30px; border-radius: 8px; color: white; margin-bottom: 30px;">
+        <h1 style="margin: 0; font-size: 28px;">HW 1 &amp; MP 2 Setup Walkthrough</h1>
+        <p style="margin: 10px 0 0 0; font-size: 18px;">Windows 11 + WSL 2 + Docker Desktop DevContainer Bring-Up</p>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <h2 style="border-bottom: 2px solid #b7a57a; padding-bottom: 10px; color: #4b2e83;">Overview &amp; Objectives</h2>
+        <p>This guide documents the complete end-to-end setup and verification protocol for <strong>HW 1</strong> and <strong>MP 2</strong> under Windows 11, WSL 2, and Docker Desktop. Follow these steps to verify your container environment, pull the course runtime, and confirm strict manifest compatibility.</p>
+    </div>
+    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
+        <div style="flex: 1 1 0%; min-width: 300px; border-radius: 8px; padding: 20px; background-color: #f8f9fa; border: 1px solid #e0e0e0;">
+            <h3 style="margin-top: 0; color: #4b2e83; border-bottom: 1px solid #eee; padding-bottom: 10px;">📝 Homework 1</h3>
+            <p style="font-size: 0.95em;">Verify local environment dependencies, terminal access, and WSL 2 Docker client execution.</p>
+            <a style="display: inline-block; background-color: #4b2e83; color: white; padding: 10px 18px; text-decoration: none; border-radius: 4px; font-size: 14px;" href="https://k-state.instructure.com/courses/201513/assignments/2597889" data-api-endpoint="https://k-state.instructure.com/api/v1/courses/201513/assignments/2597889" data-api-returntype="Assignment">Open HW 1 Portal &rarr;</a>
+        </div>
+        <div style="flex: 1 1 0%; min-width: 300px; border-radius: 8px; padding: 20px; background-color: #f8f9fa; border: 1px solid #e0e0e0;">
+            <h3 style="margin-top: 0; color: #4b2e83; border-bottom: 1px solid #eee; padding-bottom: 10px;">🤖 Machine Problem 2</h3>
+            <p style="font-size: 0.95em;">Build DevContainer runtime, verify package version hashes, and execute compute probe.</p>
+            <a style="display: inline-block; background-color: #d64309; color: white; padding: 10px 18px; text-decoration: none; border-radius: 4px; font-size: 14px;" href="https://k-state.instructure.com/courses/201513/assignments/2600010" data-api-endpoint="https://k-state.instructure.com/api/v1/courses/201513/assignments/2600010" data-api-returntype="Assignment">Open MP 2 Portal &rarr;</a>
+        </div>
+    </div>
+    <div style="background-color: #f8f9fa; border-left: 5px solid #4b2e83; padding: 20px; margin-bottom: 40px; border-radius: 4px;">
+        <h3 style="margin-top: 0; color: #4b2e83;">1. Prerequisites Checklist</h3>
+        <p>Ensure your host workstation meets or exceeds the following baseline specifications:</p>
+        <ul style="margin-bottom: 15px; padding-left: 20px;">
+            <li><strong>Operating System:</strong> Windows 11 (Build <code>26200+</code> or higher)</li>
+            <li><strong>WSL Kernel:</strong> WSL 2 (Kernel version <code>6.18+</code> or higher)</li>
+            <li><strong>IDE &amp; Tooling:</strong> VS Code with the <em>Dev Containers</em> extension installed</li>
+            <li><strong>Hardware Virtualization:</strong> Enabled in system BIOS/UEFI</li>
+        </ul>
+        <p style="margin-bottom: 0; font-size: 0.9em; color: #555;">To check your exact WSL configuration, run <code>wsl --status</code> in PowerShell.</p>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <h2 style="border-bottom: 2px solid #b7a57a; padding-bottom: 10px; color: #4b2e83;">2. Docker Desktop Configuration</h2>
+        <h4 style="color: #2d3b45; margin-bottom: 5px;">Step 2.1: General Settings Verification</h4>
+        <ol style="padding-left: 20px; margin-bottom: 20px;">
+            <li>Open Docker Desktop and click the <strong>Settings (gear icon)</strong> in the top-right header.</li>
+            <li>Select <strong>General</strong> from the right-hand panel.</li>
+            <li>Set <strong>Choose Virtual Machine Manager (VMM)</strong> to <code>WSL 2</code>.</li>
+            <li>Set <strong>Use containerd for pulling and storing images</strong> to <code>On</code>.</li>
+        </ol>
+        <h4 style="color: #2d3b45; margin-bottom: 5px;">Step 2.2: WSL Integration Enablement</h4>
+        <ol style="padding-left: 20px; margin-bottom: 20px;">
+            <li>In the Settings panel, navigate to <strong>WSL integration</strong>.</li>
+            <li>Toggle <strong>Enable integration with my default WSL distro</strong> to <code>On</code>.</li>
+            <li>Click <strong>Apply &amp; Restart Engine</strong> at the bottom right to commit the daemon changes.</li>
+        </ol>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <h2 style="border-bottom: 2px solid #b7a57a; padding-bottom: 10px; color: #4b2e83;">3. Terminal Verification</h2>
+        <p>Open your WSL terminal (e.g., <code>bhsu@Holodoc</code>) and run the following tests:</p>
+        <h4 style="color: #2d3b45; margin-bottom: 5px;">3.1 Check Docker CLI Version</h4>
+        <pre style="background-color: #2d3b45; color: #e6e2ef; padding: 12px; border-radius: 4px; overflow-x: auto; font-size: 0.85em;"><code>docker --version</code></pre>
+        <p style="font-size: 0.9em; color: #555;">Expected output: <code>Docker version 29.9.2, build a82e528</code></p>
+        <h4 style="color: #2d3b45; margin-bottom: 5px;">3.2 Verify Docker Daemon Communication</h4>
+        <pre style="background-color: #2d3b45; color: #e6e2ef; padding: 12px; border-radius: 4px; overflow-x: auto; font-size: 0.85em;"><code>docker run --rm hello-world</code></pre>
+        <div style="background-color: #eef2f5; padding: 15px; border-radius: 4px; font-family: monospace; font-size: 0.8em; margin-top: 10px; border: 1px solid #d1d9e0;">Hello from Docker!<br />This message shows that your installation appears to be working correctly.<br />...</div>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <h2 style="border-bottom: 2px solid #b7a57a; padding-bottom: 10px; color: #4b2e83;">4. MP 2 Environment &amp; Digest Verification</h2>
+        <p>To satisfy the strict version manifest for <a style="color: #d64309; text-decoration: none;" href="https://k-state.instructure.com/courses/201513/assignments/2600010" data-api-endpoint="https://k-state.instructure.com/api/v1/courses/201513/assignments/2600010" data-api-returntype="Assignment">MP 2</a>, verify your container configurations:</p>
+        <h4 style="color: #2d3b45; margin-bottom: 5px;">4.1 Verification Script (<code>verify_env.py</code>)</h4>
+        <pre style="background-color: #2d3b45; color: #e6e2ef; padding: 15px; border-radius: 4px; overflow-x: auto; font-size: 0.85em;"><code>import sys
+import hashlib
+
+def verify_environment():
+    try:
+        import torch
+        import transformers
+        import mlflow
+        import faiss
+        import whisper
+    except ImportError as e:
+        print(f"FAILED: Missing module - {e}")
+        return
+
+    env_str = f"torch-{torch.__version__}_transformers-{transformers.__version__}_mlflow-{mlflow.__version__}_faiss-{faiss.__version__}"
+    digest = hashlib.sha256(env_str.encode('utf-8')).hexdigest()
+    print(f"Environment String: {env_str}")
+    print(f"SHA-256 Digest: {digest}")
+
+if __name__ == "__main__":
+    verify_environment()</code></pre>
+        <h4 style="color: #2d3b45; margin-bottom: 5px;">4.2 Build Container &amp; Compute Digest</h4>
+        <pre style="background-color: #2d3b45; color: #e6e2ef; padding: 12px; border-radius: 4px; overflow-x: auto; font-size: 0.85em;"><code># Build image locally
+docker build -t cis531-runtime:mp2 .
+
+# Run verification script inside container
+docker run --rm cis531-runtime:mp2 python verify_env.py</code></pre>
+        <div style="background-color: #e3f2fd; border-left: 4px solid #2196f3; padding: 12px; margin-top: 15px; border-radius: 4px;"><strong>Expected Digest Output:</strong><br /><code>Environment String: torch-2.2.1_transformers-4.38.2_mlflow-2.11.1_faiss-1.8.0</code><br /><code>SHA-256 Digest: 6f0648c69f69b1faeb96cfecaa7e2a904ed9210c8c07e0b5dd13d2f9df25ff75</code></div>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <h2 style="border-bottom: 2px solid #b7a57a; padding-bottom: 10px; color: #4b2e83;">5. Compute Allocation Probing (Part 2)</h2>
+        <p>Run <code>probe_compute.py</code> inside your container runtime to verify fallback routing:</p>
+        <pre style="background-color: #2d3b45; color: #e6e2ef; padding: 15px; border-radius: 4px; overflow-x: auto; font-size: 0.85em;"><code>import torch
+
+def probe_compute():
+    if torch.cuda.is_available():
+        device_name = torch.cuda.get_device_name(0)
+        print(f"GPU Pool Active - Batch Embedding/Whisper Ready ({device_name})")
+    else:
+        print("CPU-Only Fallback Active")
+
+if __name__ == "__main__":
+    probe_compute()</code></pre>
+    </div>
+    <div style="background-color: #eef2f5; padding: 25px; border-radius: 8px; text-align: center; border: 1px solid #d1d9e0;">
+        <h3 style="margin-top: 0; color: #2d3b45;">Ready to Submit?</h3>
+        <p style="margin-bottom: 20px;">Commit your modified Dockerfile, devcontainer.json, and verification scripts to your repository, then submit your Pull Request link on Canvas.</p>
+        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;"><a style="display: inline-block; background-color: #4b2e83; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-size: 15px;" href="https://k-state.instructure.com/courses/201513/assignments/2597889" data-api-endpoint="https://k-state.instructure.com/api/v1/courses/201513/assignments/2597889" data-api-returntype="Assignment">Submit HW 1</a> <a style="display: inline-block; background-color: #d64309; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-size: 15px;" href="https://k-state.instructure.com/courses/201513/assignments/2600010" data-api-endpoint="https://k-state.instructure.com/api/v1/courses/201513/assignments/2600010" data-api-returntype="Assignment">Submit MP 2</a></div>
+    </div>
+</div>
