@@ -8,15 +8,15 @@ When using Docker, container images should be referenced by their **SHA256 diges
 
 Do not use:
 
-[DOCKERFILE]
+```dockerfile
 FROM ubuntu:latest
-[/DOCKERFILE]
+```
 
 Use:
 
-[DOCKERFILE]
+```dockerfile
 FROM ubuntu@sha256:26c68657abce813fc315b0b1008c07f1a79d7d11e3b2e5302ac74c7e890c4d0a
-[/DOCKERFILE]
+```
 
 A digest is a cryptographic identifier for a specific image build. Unlike tags, digests cannot be changed after publication. This guarantees that anyone rebuilding your project receives the exact same container image.
 
@@ -26,21 +26,21 @@ A digest is a cryptographic identifier for a specific image build. Unlike tags, 
 
 If you already have the image locally:
 
-[BASH]
+```bash
 docker images --digests
-[/BASH]
+```
 
 Or inspect a specific image:
 
-[BASH]
+```bash
 docker inspect --format='{{index .RepoDigests 0}}' ubuntu:latest
-[/BASH]
+```
 
 Example output:
 
-[TEXT]
+```text
 ubuntu@sha256:26c68657abce813fc315b0b1008c07f1a79d7d11e3b2e5302ac74c7e890c4d0a
-[/TEXT]
+```
 
 ---
 
@@ -48,13 +48,13 @@ ubuntu@sha256:26c68657abce813fc315b0b1008c07f1a79d7d11e3b2e5302ac74c7e890c4d0a
 
 If your project uses Docker Compose, the image reference should also be pinned by digest:
 
-[YAML]
+```yaml
 services:
   web:
     image: nginx@sha256:e99b0d363db8efcb2b7f369d72c1c68fa82b5fae5349f2b18aa218f2f4e3f3b9
     ports:
       - "80:80"
-[/YAML]
+```
 
 ---
 
