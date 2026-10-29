@@ -13,7 +13,7 @@
 * **INV-11 (Schema Authority):** CIS 731 teams derive custom schemas; CIS 531 teams adopt the unmodified instructor-provided schema.
 * **INV-12 (Gold-Standard Evaluation):** Graded metrics computed against instructor gold sets for Mods 8/10; student-constructed for Mod 9.
 * **INV-13 / INV-15 (Two-Tier DevContainer Policy):** The CPU-pinned DevContainer is the normative baseline (100% solvable); GPU container is an optional overlay.
-* **INV-14 (Manifest Pinning):** Strict SHA/digest pinning for all container runtimes and dependency lockfiles.
+* **INV-14 ([Manifest Pinning](https://share.google/aimode/xc0WHLRBbyl9GaWk1)):** Strict SHA/digest pinning for all container runtimes and dependency lockfiles.
 * **INV-16 (Chronological GPU Access Gating):** GPU access unlocked post-proposal greenlight (Week 5 onward).
 * **INV-17 (Student-Constructed Gold Sets):** Module 9 annotation limits (≤50 objects / 2 hours for homework; 50–200 labeled examples for term projects).
 * **INV-18 ("Broke the Bank" Protocol):** Quota exhaustion triggers automatic CPU/free-tier fallback; persistent failure consumes 1 of 2 permitted assignment drops.
