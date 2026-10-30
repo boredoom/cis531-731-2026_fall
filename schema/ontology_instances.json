@@ -1,0 +1,51 @@
+{
+  "trope_classes": [
+    {
+      "class_id": "Trope:HustleNarrative",
+      "label": "The Hustle & Socio-Economic Ascent",
+      "parent_class": "ThematicPattern",
+      "competency_indicators": ["grind", "corner", "out the mud", "trapping", "stock portfolio", "investments"]
+    },
+    {
+      "class_id": "Trope:RegionalAuthenticity",
+      "label": "Geographic Rootedness & Block Allegiance",
+      "parent_class": "ThematicPattern",
+      "competency_indicators": ["area code", "borough", "repping the block", "510", "718", "404", "312"]
+    },
+    {
+      "class_id": "Trope:LyricalSovereignty",
+      "label": "Technical Virtuosity & Competitive Battle Stance",
+      "parent_class": "NarrativeDevice",
+      "competency_indicators": ["bars", "flow", "multi-syllabic", "chopper", "freestyle", "cypher"]
+    },
+    {
+      "class_id": "Trope:SystemicCritique",
+      "label": "Sociopolitical Resistance & Institutional Critique",
+      "parent_class": "ThematicPattern",
+      "competency_indicators": ["redlining", "police brutality", "prison industrial", "gentrification", "panther"]
+    }
+  ],
+  "regional_vocabularies": {
+    "East Coast": {
+      "subgenres": ["Boom-Bap", "Brooklyn Drill", "Hardcore Hip-Hop"],
+      "slang_lexicon": ["deadass", "mad", "son", "timbs", "bodega", "facts"]
+    },
+    "West Coast": {
+      "subgenres": ["G-Funk", "Hyphy", "Ratchet"],
+      "slang_lexicon": ["yadadamean", "ghostride", "lowrider", "heavy", "on the set", "slappin"]
+    },
+    "Southern": {
+      "subgenres": ["Trap", "Dirty South", "Chopped and Screwed", "Bounce"],
+      "slang_lexicon": ["crunk", "swag", "skrrt", "trap house", "whodat", "slab", "lean"]
+    },
+    "Midwest": {
+      "subgenres": ["Chopper", "Footwork", "Midwest Bounce"],
+      "slang_lexicon": ["merch it", "tweaking", "bogus", "finna", "opps"]
+    }
+  },
+  "temporal_eras": [
+    { "era_name": "Golden Era", "start_year": 1985, "end_year": 1995 },
+    { "era_name": "Bling Era", "start_year": 1996, "end_year": 2009 },
+    { "era_name": "Streaming Era", "start_year": 2010, "end_year": 2026 }
+  ]
+}
