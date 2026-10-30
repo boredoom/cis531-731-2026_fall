@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://kddresearch.org/cis531-731/schemas/hiphop_trope_ontology.schema.json",
+  "title": "HipHopTropeOntology",
+  "description": "Ontology definition governing regional hip-hop thematic tropes, dialect markers, and temporal movements.",
+  "type": "object",
+  "required": ["trope_classes", "regional_vocabularies", "temporal_eras"],
+  "properties": {
+    "trope_classes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["class_id", "label", "parent_class", "competency_indicators"],
+        "properties": {
+          "class_id": { "type": "string" },
+          "label": { "type": "string" },
+          "parent_class": { "type": "string" },
+          "competency_indicators": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "regional_vocabularies": {
+      "type": "object",
+      "required": ["East Coast", "West Coast", "Southern", "Midwest"],
+      "properties": {
+        "East Coast": {
+          "type": "object",
+          "required": ["subgenres", "slang_lexicon"],
+          "properties": {
+            "subgenres": { "type": "array", "items": { "type": "string" } },
+            "slang_lexicon": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "West Coast": {
+          "type": "object",
+          "required": ["subgenres", "slang_lexicon"],
+          "properties": {
+            "subgenres": { "type": "array", "items": { "type": "string" } },
+            "slang_lexicon": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "Southern": {
+          "type": "object",
+          "required": ["subgenres", "slang_lexicon"],
+          "properties": {
+            "subgenres": { "type": "array", "items": { "type": "string" } },
+            "slang_lexicon": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "Midwest": {
+          "type": "object",
+          "required": ["subgenres", "slang_lexicon"],
+          "properties": {
+            "subgenres": { "type": "array", "items": { "type": "string" } },
+            "slang_lexicon": { "type": "array", "items": { "type": "string" } }
+          }
+        }
+      }
+    },
+    "temporal_eras": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["era_name", "start_year", "end_year"],
+        "properties": {
+          "era_name": { "type": "string" },
+          "start_year": { "type": "integer" },
+          "end_year": { "type": "integer" }
+        }
+      }
+    }
+  }
+}
