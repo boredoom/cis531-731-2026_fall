@@ -1,6 +1,6 @@
 <!--
 yaml_schema_version: "2.2"
-document_version: "3.0"
+document_version: "3.1"
 document_last_updated_date: "2026-10-29"
 -->
 
@@ -112,8 +112,10 @@ C:.
 |   |   |   generative_ai_kit_howto.md
 |   |   |   generative_ai_kit_howto_v2.md
 |   |   |   generative_ai_kit_v2.md
+|   |   |   generative_ai_kit_v3.md
 |   |   |   office_hours_scheduling.md
 |   |   |   ps4_self_service_feedback_guide.md
+|   |   |   README.md
 |   |   |   term_project_invariants.md
 |   |   |   
 |   |   \---prompts
@@ -126,6 +128,8 @@ C:.
 |           04_term_project_guidelines.md
 |           05_term_project_taxonomy.md
 |           06_term_project_sourcing_guide.md
+|           07_term_project_evaluation.md
+|           08_term_project_grading_rubric.md
 |           README.md
 |           
 +---assignments
@@ -325,10 +329,12 @@ C:.
 |           phase_README_template.md
 |           
 \---term_project
+    |   fixed_docker_manifest_requirement.md
+    |   
     +---docker
     |       Dockerfile
     |       
     \---rubrics
-            ps4_proposal_feedback_rubric.md            
+            ps4_proposal_feedback_rubric.md
 ```
 </details>
