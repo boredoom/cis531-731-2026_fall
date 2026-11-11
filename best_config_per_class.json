@@ -1,0 +1,49 @@
+{
+  "grading_eligible": true,
+  "evaluation_source": "eval_mp7.jsonl",
+  "macro_f1": 0.9110347315307763,
+  "ci_95_lower": 0.8570316370912043,
+  "ci_95_upper": 0.9542153507723288,
+  "per_class": {
+    "Hustle_Narrative": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Regional_Authenticity": {
+      "precision": 0.8695652173913043,
+      "recall": 1.0,
+      "f1": 0.9302325581395349
+    },
+    "Lyrical_Sovereignty": {
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1": 0.8235294117647058
+    },
+    "Systemic_Critique": {
+      "precision": 1.0,
+      "recall": 0.85,
+      "f1": 0.918918918918919
+    },
+    "Boom_Bap": {
+      "precision": 1.0,
+      "recall": 0.75,
+      "f1": 0.8571428571428571
+    },
+    "G_Funk": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Trap": {
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8888888888888888
+    },
+    "Chopper": {
+      "precision": 0.7692307692307693,
+      "recall": 1.0,
+      "f1": 0.8695652173913043
+    }
+  }
+}
